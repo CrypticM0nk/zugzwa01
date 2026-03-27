@@ -776,7 +776,7 @@ select.k-input option { background: #1a1919; color: #fff; }
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[#97a9ff]/5 rounded-full blur-[150px] pointer-events-none" aria-hidden="true"></div>
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-24 items-start relative z-10">
 
-      <!-- Left -->
+      <!-- Center -->
       <div class="space-y-10">
         <div class="space-y-6">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262626]/60 border border-[#494847]/25 backdrop-blur-md">
@@ -811,64 +811,6 @@ select.k-input option { background: #1a1919; color: #fff; }
           </footer>
         </blockquote>
       </div>
-
-      <!-- Right: form -->
-      <div class="bg-[#131313] rounded-xl p-8 md:p-10 border border-[#494847]/10">
-        <h2 class="font-headline text-2xl font-bold text-white mb-7">Start the Conversation</h2>
-
-        <div id="form-fields">
-          <form id="contact-form" onsubmit="handleFormSubmit(event)" novalidate>
-            <div class="grid grid-cols-2 gap-5">
-
-              <div class="col-span-2 sm:col-span-1 flex flex-col gap-1.5">
-                <label for="f-fname" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">First Name <span class="text-[#97a9ff]" aria-hidden="true">*</span></label>
-                <input id="f-fname" name="fname" type="text" autocomplete="given-name" placeholder="Aiko" required class="k-input" aria-required="true"/>
-                <p class="field-error hidden" role="alert" aria-live="polite"></p>
-              </div>
-
-              <div class="col-span-2 sm:col-span-1 flex flex-col gap-1.5">
-                <label for="f-lname" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">Last Name <span class="text-[#97a9ff]" aria-hidden="true">*</span></label>
-                <input id="f-lname" name="lname" type="text" autocomplete="family-name" placeholder="Tanaka" required class="k-input" aria-required="true"/>
-                <p class="field-error hidden" role="alert" aria-live="polite"></p>
-              </div>
-
-              <div class="col-span-2 flex flex-col gap-1.5">
-                <label for="f-email" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">Work Email <span class="text-[#97a9ff]" aria-hidden="true">*</span></label>
-                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required class="k-input" aria-required="true"/>
-                <p class="field-error hidden" role="alert" aria-live="polite"></p>
-              </div>
-
-              <div class="col-span-2 flex flex-col gap-1.5">
-                <label for="f-company" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">Company</label>
-                <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Your organization" class="k-input"/>
-              </div>
-
-              <div class="col-span-2 flex flex-col gap-1.5">
-                <label for="f-type" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">Project Type <span class="text-[#97a9ff]" aria-hidden="true">*</span></label>
-                <select id="f-type" name="project_type" required class="k-input" aria-required="true">
-                  <option value="">Select an area…</option>
-                  <option value="core-infra">Core Infrastructure</option>
-                  <option value="data-mesh">Data Mesh Engineering</option>
-                  <option value="ai-runtime">AI Runtime Layers</option>
-                  <option value="security">Security Architecture</option>
-                  <option value="advisory">General Advisory</option>
-                </select>
-                <p class="field-error hidden" role="alert" aria-live="polite"></p>
-              </div>
-
-              <div class="col-span-2 flex flex-col gap-1.5">
-                <label for="f-challenge" class="font-label text-[10px] uppercase tracking-widest text-[#adaaaa]">Tell us about the challenge <span class="text-[#97a9ff]" aria-hidden="true">*</span></label>
-                <textarea id="f-challenge" name="challenge" rows="4" required placeholder="Describe your current situation, scale, and what you're trying to achieve…" class="k-input resize-none" aria-required="true" style="min-height:120px;"></textarea>
-                <p class="field-error hidden" role="alert" aria-live="polite"></p>
-              </div>
-            </div>
-
-            <div class="mt-7 space-y-4">
-              <button type="submit" id="submit-btn" class="btn-primary w-full py-4 text-base">Send Message →</button>
-              <p class="text-center font-label text-[10px] text-[#494847] uppercase tracking-widest">No commitment required · We respond within 24 hours.</p>
-            </div>
-          </form>
-        </div>
 
         <!-- Success -->
         <div id="form-success" role="status" aria-live="polite">
